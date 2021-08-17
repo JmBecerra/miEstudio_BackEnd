@@ -28,6 +28,7 @@ namespace MiEstudioBackEnd.Controllers
             try
             {
                 var listUsuario = await _context.Usuarios.ToListAsync();
+
                 return Ok(listUsuario);
             }
             catch (Exception e)
