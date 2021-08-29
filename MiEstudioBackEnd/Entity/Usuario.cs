@@ -23,6 +23,7 @@ namespace MiEstudioBackEnd.Entity
         public string Telefono { get; set; }
         public string Email { get; set; }
         public short Alta { get; set; }
+        public DateTime? FechaNac { get; set; }
         public DateTime? FechaAlta { get; set; }
         public DateTime? FechaMod { get; set; }
         public string Password { get; set; }

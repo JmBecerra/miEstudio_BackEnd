@@ -16,14 +16,14 @@ namespace MiEstudioBackEnd.Entity
 
         public int IdActividad { get; set; }
         public string Dia { get; set; }
-        public TimeSpan Horario { get; set; }
+        public string Horario { get; set; }
         public int Ocupacion { get; set; }
         public bool? Activa { get; set; }
-        public int IdTipo { get; set; }
+        public int Tipo { get; set; }
         public int IdNivel { get; set; }
 
         public virtual Nivel IdNivelNavigation { get; set; }
-        public virtual Tipo IdTipoNavigation { get; set; }
+        public virtual Tipo TipoNavigation { get; set; }
         public virtual ICollection<ActividadesUsuario> ActividadesUsuarios { get; set; }
         public virtual ICollection<Multimedium> Multimedia { get; set; }
         public virtual ICollection<Reserva> Reservas { get; set; }
